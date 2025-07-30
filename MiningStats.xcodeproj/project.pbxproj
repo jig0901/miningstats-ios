@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		97A077BA2E39838D0028C06E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A077B92E39838C0028C06E /* WidgetKit.framework */; };
+		97A077BC2E39838D0028C06E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A077BB2E39838D0028C06E /* SwiftUI.framework */; };
+		97A077CD2E39839B0028C06E /* MiningStatsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 97A077B72E39838C0028C06E /* MiningStatsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97A077DB2E3A8FFF0028C06E /* IMG_6593.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A077D92E3A8FFF0028C06E /* IMG_6593.png */; };
+		97A077DC2E3A8FFF0028C06E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 97A077DA2E3A8FFF0028C06E /* README.md */; };
+		97A077DD2E3A8FFF0028C06E /* IMG_6592.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A077D82E3A8FFF0028C06E /* IMG_6592.png */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		97A077972E39837A0028C06E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +30,51 @@
 			remoteGlobalIDString = 97A077882E3983780028C06E;
 			remoteInfo = MiningStats;
 		};
+		97A077CB2E39839B0028C06E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A077812E3983780028C06E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A077B62E39838C0028C06E;
+			remoteInfo = MiningStatsWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97A077D22E39839B0028C06E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97A077CD2E39839B0028C06E /* MiningStatsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		97A077892E3983780028C06E /* MiningStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiningStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A077962E39837A0028C06E /* MiningStatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiningStatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A077A02E39837A0028C06E /* MiningStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiningStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A077B72E39838C0028C06E /* MiningStatsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MiningStatsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A077B92E39838C0028C06E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		97A077BB2E39838D0028C06E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		97A077D32E3984C60028C06E /* MiningStatsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiningStatsWidgetExtension.entitlements; sourceTree = "<group>"; };
+		97A077D82E3A8FFF0028C06E /* IMG_6592.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6592.png; sourceTree = "<group>"; };
+		97A077D92E3A8FFF0028C06E /* IMG_6593.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6593.png; sourceTree = "<group>"; };
+		97A077DA2E3A8FFF0028C06E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		97A077CE2E39839B0028C06E /* Exceptions for "MiningStatsWidget" folder in "MiningStatsWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 97A077B62E39838C0028C06E /* MiningStatsWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		97A0778B2E3983780028C06E /* MiningStats */ = {
@@ -43,6 +90,14 @@
 		97A077A32E39837A0028C06E /* MiningStatsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MiningStatsUITests;
+			sourceTree = "<group>";
+		};
+		97A077BD2E39838D0028C06E /* MiningStatsWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				97A077CE2E39839B0028C06E /* Exceptions for "MiningStatsWidget" folder in "MiningStatsWidgetExtension" target */,
+			);
+			path = MiningStatsWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +124,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		97A077B42E39838C0028C06E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A077BC2E39838D0028C06E /* SwiftUI.framework in Frameworks */,
+				97A077BA2E39838D0028C06E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		97A077802E3983780028C06E = {
 			isa = PBXGroup;
 			children = (
+				97A077D82E3A8FFF0028C06E /* IMG_6592.png */,
+				97A077D92E3A8FFF0028C06E /* IMG_6593.png */,
+				97A077DA2E3A8FFF0028C06E /* README.md */,
+				97A077D32E3984C60028C06E /* MiningStatsWidgetExtension.entitlements */,
 				97A0778B2E3983780028C06E /* MiningStats */,
 				97A077992E39837A0028C06E /* MiningStatsTests */,
 				97A077A32E39837A0028C06E /* MiningStatsUITests */,
+				97A077BD2E39838D0028C06E /* MiningStatsWidget */,
+				97A077B82E39838C0028C06E /* Frameworks */,
 				97A0778A2E3983780028C06E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +158,18 @@
 				97A077892E3983780028C06E /* MiningStats.app */,
 				97A077962E39837A0028C06E /* MiningStatsTests.xctest */,
 				97A077A02E39837A0028C06E /* MiningStatsUITests.xctest */,
+				97A077B72E39838C0028C06E /* MiningStatsWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		97A077B82E39838C0028C06E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97A077B92E39838C0028C06E /* WidgetKit.framework */,
+				97A077BB2E39838D0028C06E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +182,12 @@
 				97A077852E3983780028C06E /* Sources */,
 				97A077862E3983780028C06E /* Frameworks */,
 				97A077872E3983780028C06E /* Resources */,
+				97A077D22E39839B0028C06E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				97A077CC2E39839B0028C06E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				97A0778B2E3983780028C06E /* MiningStats */,
@@ -163,6 +245,28 @@
 			productReference = 97A077A02E39837A0028C06E /* MiningStatsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		97A077B62E39838C0028C06E /* MiningStatsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A077CF2E39839B0028C06E /* Build configuration list for PBXNativeTarget "MiningStatsWidgetExtension" */;
+			buildPhases = (
+				97A077B32E39838C0028C06E /* Sources */,
+				97A077B42E39838C0028C06E /* Frameworks */,
+				97A077B52E39838C0028C06E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				97A077BD2E39838D0028C06E /* MiningStatsWidget */,
+			);
+			name = MiningStatsWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MiningStatsWidgetExtension;
+			productReference = 97A077B72E39838C0028C06E /* MiningStatsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +288,9 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 97A077882E3983780028C06E;
 					};
+					97A077B62E39838C0028C06E = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 97A077842E3983780028C06E /* Build configuration list for PBXProject "MiningStats" */;
@@ -203,6 +310,7 @@
 				97A077882E3983780028C06E /* MiningStats */,
 				97A077952E39837A0028C06E /* MiningStatsTests */,
 				97A0779F2E39837A0028C06E /* MiningStatsUITests */,
+				97A077B62E39838C0028C06E /* MiningStatsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +320,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A077DB2E3A8FFF0028C06E /* IMG_6593.png in Resources */,
+				97A077DC2E3A8FFF0028C06E /* README.md in Resources */,
+				97A077DD2E3A8FFF0028C06E /* IMG_6592.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +334,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		97A0779E2E39837A0028C06E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A077B52E39838C0028C06E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +371,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		97A077B32E39838C0028C06E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +390,11 @@
 			isa = PBXTargetDependency;
 			target = 97A077882E3983780028C06E /* MiningStats */;
 			targetProxy = 97A077A12E39837A0028C06E /* PBXContainerItemProxy */;
+		};
+		97A077CC2E39839B0028C06E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A077B62E39838C0028C06E /* MiningStatsWidgetExtension */;
+			targetProxy = 97A077CB2E39839B0028C06E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,8 +525,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2N7R25SRC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mining Stats";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,8 +554,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2N7R25SRC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mining Stats";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -464,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -510,6 +646,62 @@
 			};
 			name = Release;
 		};
+		97A077D02E39839B0028C06E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MiningStatsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2N7R25SRC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiningStatsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiningStatsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jigishbelani.MiningStats.MiningStatsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97A077D12E39839B0028C06E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MiningStatsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2N7R25SRC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiningStatsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiningStatsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jigishbelani.MiningStats.MiningStatsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -545,6 +737,15 @@
 			buildConfigurations = (
 				97A077B12E39837A0028C06E /* Debug */,
 				97A077B22E39837A0028C06E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A077CF2E39839B0028C06E /* Build configuration list for PBXNativeTarget "MiningStatsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A077D02E39839B0028C06E /* Debug */,
+				97A077D12E39839B0028C06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
