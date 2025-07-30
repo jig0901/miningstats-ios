@@ -15,17 +15,26 @@ A native iOS app for monitoring your Bitcoin solo mining operation. This SwiftUI
 - 👷 Per-worker stats table with live hashrates
 - 📈 Line chart for historical hashrate (1m TH/s)
 - 📱 Home Screen and Lock Screen widgets (via WidgetKit)
-- 🔒 Works over local/private network
 
 ---
 
 ## 📸 Screenshots
 
-### Dashboard View
-![Dashboard](./IMG_6592.png)
+### 📊 Dashboard View
 
-### Worker Details View
-![Worker Details](./IMG_6593.png)
+<img src="./IMG_6592.png" width="350"/>
+
+### 👷 Worker Details View
+
+<img src="./IMG_6593.png" width="350"/>
+
+### 🔐 Lock Screen Widgets
+
+<img src="./IMG_6584.png" width="300"/>
+
+### 🏠 Home Screen Widget
+
+<img src="./IMG_6585.png" width="350"/>
 
 ---
 
@@ -79,3 +88,4 @@ Make sure your iPhone is on the same network as the mining server or VPN-connect
 ## 🙌 Credits
 
 This app is a native rewrite of a Streamlit-based dashboard, optimized for mobile use and quick stat checks.
+
